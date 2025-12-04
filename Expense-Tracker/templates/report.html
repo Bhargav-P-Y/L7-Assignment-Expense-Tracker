@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Report</title>
+</head>
+<body>
+
+    <h1>Monthly Expense Report</h1>
+
+    <h2>Total Spending</h2>
+    <p>Total: {{ total }}</p>
+
+    <h2>Category Summary</h2>
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Budget</th>
+            <th>Spent</th>
+            <th>Remaining</th>
+        </tr>
+        {% for row in summary %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Over Budget Alerts</h2>
+    {% if over_budget %}
+        {% for row in over_budget %}
+            <p>{{ row[0] }} is OVER budget! (Spent {{ row[2] }}, Budget {{ row[1] }})</p>
+        {% endfor %}
+    {% else %}
+        <p>No categories over budget.</p>
+    {% endif %}
+
+    <h2>Low Budget Alerts (10% Remaining)</h2>
+    {% if low_budget %}
+        {% for row in low_budget %}
+            <p>{{ row[0] }} is at 90% of budget! (Spent {{ row[2] }}, Budget {{ row[1] }})</p>
+        {% endfor %}
+    {% else %}
+        <p>No low budget warnings.</p>
+    {% endif %}
+
+</body>
+</html>
