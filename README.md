@@ -1,13 +1,11 @@
-# L7-Assignment-Expense-Tracker
-The project code for the assignment
+# Expense-Tracker
 
-# Expense Tracker:
 
 This project is a Flask + SQLite web application that allows users to:
 
-Log daily expenses
-Set monthly budgets per category
-View monthly spending reports
+Log daily expenses 
+Set monthly budgets per category 
+View monthly spending reports 
 
 Receive alerts if:
 A category exceeds its budget
@@ -47,8 +45,8 @@ Visit: http://127.0.0.1:5000/report?year=2025&month=3
 
 
 This shows:
-Total spending
-Per-category budget vs spending
-Over-budget alerts
+Total spending <br>
+Per-category budget vs spending <br>
+Over-budget alerts <br>
 
 10% remaining alerts
