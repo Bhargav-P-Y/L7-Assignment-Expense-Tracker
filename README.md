@@ -3,13 +3,13 @@
 
 This project is a Flask + SQLite web application that allows users to:
 
-Log daily expenses 
-Set monthly budgets per category 
-View monthly spending reports 
+Log daily expenses <br>
+Set monthly budgets per category <br>
+View monthly spending reports <br>
 
 Receive alerts if:
-A category exceeds its budget
-Only 10% of the budget remains
+A category exceeds its budget <br>
+Only 10% of the budget remains <br>
 
 
 ## Steps to Run the Application
