@@ -48,5 +48,35 @@ This shows:
 Total spending <br>
 Per-category budget vs spending <br>
 Over-budget alerts <br>
-
 10% remaining alerts
+
+## Test Steps (Evaluator Checklist)
+Verify Database Creation
+
+Visit:
+/init
+
+Should return:
+"Database initialized."
+
+Add Budgets
+Go to:
+/budget
+Add 2–3 categories.
+
+Add Expenses
+Go to:
+/expense
+
+Add 3–5 entries for different dates.
+
+View Report
+Visit:
+/report?year=2025&month=3
+
+
+You should see:
+Total Spending
+Category Summary Table
+Over-budget warnings
+Low-budget warnings (10% remaining)
